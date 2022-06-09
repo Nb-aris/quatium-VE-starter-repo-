@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 requests = "*"
-dash = "*"
 pandas = "*"
+dash = "*"
 
 [dev-packages]
 
