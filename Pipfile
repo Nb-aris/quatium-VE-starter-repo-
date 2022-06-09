@@ -5,12 +5,10 @@ name = "pypi"
 
 [packages]
 requests = "*"
+dash = "*"
 pandas = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.8"
-
-[packages.dash]
-extras = [ "testing",]
