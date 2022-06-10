@@ -1,6 +1,7 @@
+import sys
 import dash
 import pandas
 
 
 
-print(">>>>>>>>>>>>>>>> Successfully")
+print(">>>>>>>>>>>>>>>> Successfully", sys.path)
