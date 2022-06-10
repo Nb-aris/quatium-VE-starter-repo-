@@ -17,7 +17,6 @@ solution = pd.read_csv('Task_2_pink_morsel_sales.csv')
 if __name__ == '__main__':
 
     print(f11)
-
     print(solution)
 
     pass
