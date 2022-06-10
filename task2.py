@@ -6,15 +6,13 @@ df.to_csv("data/compactData/data.csv")
 
 f1 = pd.read_csv("data/compactData/data.csv", index_col= "product", converters={'price': lambda s: float(s.replace('$', ''))})
 
+f1["sales ($)"] = f1["price"] * f1["quantity"]
+
 f11 = f1.loc['pink morsel']
 
-f11["sales ($)"] = f11["price"] * f11["quantity"]
+f11[['sales ($)', 'date', 'region']].to_csv("Task_2_pink_morsel_sales.csv", index=False)
 
-f11[['sales ($)', 'date', 'region']].to_csv("Task_2_pink_morsel_sales.csv")
-
-solution = pd.read_csv('Task_2_pink_morsel_sales.csv')
-solution.drop(columns="product")
-
+solution = pd.read_csv('Task_2_pink_morsel_sales.csv') 
 
 if __name__ == '__main__':
 
